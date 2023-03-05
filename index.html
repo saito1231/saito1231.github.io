@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="deacription" content="斎藤雅広のポートフォリオ">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/雅-logo.png">
+  <title>斎藤雅広のポートフォリオ</title>
+</head>
+<body>
+  <header id="top">
+    <div id="home">
+      <img class="logo-image" src="./images/雅-logo.png" alt="logo-image">
+      <nav class="top-menu">
+        <ul class="site-nav">
+          <li class="current">
+            <a href="#home">home</a>
+          </li>
+          <li>
+            <a href=".person">person</a>
+          </li>
+          <li>
+            <a href=".skills">skills</a>
+          </li>
+          <li>
+            <a href=".contact">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-image"></div>
+  </header>
+
+  <main>
+    <section class="person">
+      <h2>person</h2>
+      <div class="person-1">
+        <figure class="person">
+          <img class="figure-image" src="./images/person.png" alt="figure-image">
+          <figcaption>
+            <h3 class="person-name">斎藤 雅広</h3>
+            <p class="person-about">
+              1996.12.31   26歳<br>
+              福島県出身
+            </p>
+          </figcaption>
+        </figure>
+        <div class="career">
+          <ul>
+            <li>
+              <h4>航空自衛隊</h4>
+              <p>
+                1年制の専門学校卒業後航空自衛隊に入隊。<br>
+                青森県に所在する基地でpac-3というミサイルを扱う操作員として、日本の領空を防衛する任務に従事。<br>
+                在籍期間:4年
+              </p>
+            </li>
+            <li>
+              <h4>広告制作会社</h4>
+              <p>
+                都内の広告制作会社に入社<br>
+                アシスタントディレクターとして、主にSP広告作成、スケジュール管理、イベント運営、<br>
+                ノベルティの企画立案等の各サポートに従事。<br>
+                在籍期間:約６ヶ月<br>
+                コロナ禍ということもあり、職場環境の変化に当時は柔軟に対応することができず退職。<br>
+                同じことを繰り返さないよう、コミュニケーションを密に取ることで対策。<br>
+                それにより、信頼関係の構築、業務の質の向上・効率化も同時に図ることができた。
+              </p>
+            </li>
+            <li>
+              <h4>フィットネスジム</h4>
+              <p>
+                トレーナー兼店舗運営スタッフとして、会員様の目標・悩みに合わせたプログラム作成及びトレーニング指導、<br>
+                会員情報の管理、受付対応等を業務として従事。<br>
+                在籍期間:2020年10月〜現職
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> 
+
+    <section class="skills">
+      <h2>skills</h2>
+      <div class="skills-item">
+        <ul>
+          <li>
+            <div class="skills-about">
+              <img class="html-image" src="./images/HTML5.png" alt="html-logo">
+              <h3>HTML</h3>
+              <p>webサイトを構築するための、HTMLコーディングが可能です。</p>
+            </div>
+          </li>
+          <li>
+            <div class="skills-about">
+              <img class="css-image" src="./images/css.png" alt="css-logo">
+              <h3>CSS</h3>
+              <p>webサイトを構築する為の、CSSコーディングが可能です。</p>
+            </div>
+          </li>
+          <li>
+            <div class="skills-about">
+              <img class="js-image" src="./images/js.png" alt="js-logo">
+              <h3>Javascript</h3>
+              <p>フロントエンド開発の為の、Javascriptを学習中です。</p>
+            </div>
+          </li>
+          <li>
+            <div class="skills-about">
+              <img class="res-image" src="./images/responsiv.png" alt="res-logo">
+              <h3>レスポンシブ対応</h3>
+              <p>端末、画面によってのレスポンシブ対応を意識したデザインの作成、コーディングが可能です。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>contact</h2>
+      <form action="inpuiry">
+        <dl>
+          <dt><label for="name">お名前</label></dt>
+          <dd>
+            <input type="text" id="name" name="name" placeholder="name">
+          </dd>
+
+          <dt><label for="email">メールアドレス</label></dt>
+          <dd>
+            <input type="text" id="email" name="email" placeholder="adress">
+          </dd>
+
+          <dt><label for="number">電話番号</label></dt>
+          <dd>
+            <input type="text" id="number" name="number" placeholder="number">
+          </dd>
+          <dt>お問い合わせ内容</dt>
+          <dd>
+            <textarea cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
+          </dd>
+          <button>送信</button>
+        </dl>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <small>
+      &copy; 2023 Masahiro Saito
+    </small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  color: white;
+}
+
+h2 {
+  margin: 100px 0;
+  text-align: center;
+}
+
+
+/* 
+header 
+*/
+
+#home {
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  align-items: center;
+  width: calc(100% -10px - 10px);
+}
+
+.site-nav {
+  margin: 5 0 0;
+}
+
+.site-nav li a:hover,
+.site-nav li a:active,
+.site-nav li.current a {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.logo-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: spin 2.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav li {
+  padding: 10px ;
+  list-style-type: none;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* 
+main
+*/
+
+
+.main-image {
+  background-image: url(../images/名称未設定-4\ Large.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  width: 100vw;
+  height: 70vh;
+}
+
+
+/* 
+person 
+*/
+
+.person {
+  margin: 0 10px;
+  background-color: white;
+  color: black;
+}
+
+
+
+.figure-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  color: black;
+  object-fit: cover;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.figure-image:hover {
+  transform: scale(1.5);
+}
+
+.person-name {
+  margin: 5px 0 10px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.person-about {
+  font-size: 14px;
+  text-align: center;
+}
+
+.person-1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.career {
+  margin: 0 20px;
+  transition-property: font-size;
+  transition-duration: 1s;
+}
+
+.career h4 {
+  margin-bottom: 2px;
+}
+
+.career:hover {
+  font-size: 32px;
+}
+
+.career p {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+
+.career ul li {
+  list-style: none;
+}
+
+/* 
+skills
+ */
+
+.skills {
+  background-color: black;
+  padding: 10px 0 20px;
+}
+
+.html-image,
+.css-image,
+.js-image,
+.res-image {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.skills-about {
+  text-align: center;
+}
+
+.skills-item ul {
+  margin: 30px auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-item ul li {
+  margin: 10px 20px;
+  padding: 20px;
+  width: 180px;
+  height: 250px;
+  background: rgb(225, 225, 225);
+  list-style-type: none;
+  color: black;
+  transition: background-color 1s;
+}
+
+.skills-item ul li:hover {
+  background-color: white;
+}
+
+.skills-item ul li h3 {
+  text-align: center; 
+}
+
+.skills-item ul li p {
+  font-size: 14px;
+  margin: 5px auto;
+  padding: 3px;
+  text-align: left;
+}
+
+
+/* 
+contact
+ */
+
+.contact {
+  width: 300px;
+  margin: 0 auto;
+  color: black;
+}
+
+.contact dt {
+  margin: 15px auto 5px;
+}
+
+button {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  background: white;
+  text-align: center;
+  border-radius: 8px;
+  color: orange;
+  margin: 30px 100px 50px;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+button:hover {
+  background-color: orange;
+  color: white;
+}
+
+
+footer {
+  padding: 15px;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+
+
+
+
+
+/*
+ responsive
+  */
+
+
+/*
+ min 500 
+*/
+@media(min-width: 500px) {
+  #home {
+    width: 500px;
+  }
+
+  .person-1 {
+    flex-wrap: wrap;
+  }
+
+  .skills-item ul {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* 
+780
+*/
+
+@media(min-width: 780px) {
+  #home {
+    width: 780px;
+  }
+
+  .skills-item ul {
+    gap: calc((780px - 220px * 3) / 2);
+  }
+}
+
+
+/* 
+900
+*/
+
+@media(min-width: 900px) {
+  .skills-item ul {
+    gap: calc((900px - 220px * 3) / 2);
+  }
+}
+
+
+/* 
+1020
+*/
+
+@media(min-width: 1000px) {
+  #home {
+    width: 1000px;
+  }
+
+  .skills-item ul {
+    flex-wrap: nowrap;
+    gap: calc((1000px - 220px * 4) / 5);
+  }
+}
